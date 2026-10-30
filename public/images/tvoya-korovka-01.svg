@@ -1,0 +1,11 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#EFE2D0"/>
+  <rect x="132" y="132" width="936" height="1136" fill="#F8F2E8" stroke="#20201D" stroke-width="2"/>
+  <rect x="392" y="190" width="416" height="900" rx="56" fill="#20201D"/>
+  <rect x="432" y="250" width="336" height="780" rx="32" fill="#F3EEE4"/>
+  <circle cx="600" cy="430" r="92" fill="#D24D2C"/>
+  <rect x="492" y="588" width="216" height="28" fill="#20201D"/>
+  <rect x="492" y="652" width="216" height="128" fill="#9FB782"/>
+  <rect x="492" y="812" width="216" height="128" fill="#F2C88F"/>
+  <text x="180" y="1210" fill="#20201D" font-family="Arial, sans-serif" font-size="54" font-weight="700">Карточка животного</text>
+</svg>

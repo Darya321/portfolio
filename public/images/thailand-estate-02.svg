@@ -1,0 +1,11 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#F6F0E5"/>
+  <rect x="104" y="116" width="992" height="1168" stroke="#20201D" stroke-width="2"/>
+  <rect x="190" y="216" width="392" height="420" fill="#1F8A70"/>
+  <rect x="638" y="216" width="372" height="420" fill="#EBCB93"/>
+  <rect x="190" y="718" width="820" height="140" fill="#20201D"/>
+  <rect x="190" y="930" width="240" height="220" fill="#D98E47"/>
+  <rect x="486" y="930" width="240" height="220" fill="#E9DDCA"/>
+  <rect x="782" y="930" width="228" height="220" fill="#1F8A70"/>
+  <text x="190" y="1218" fill="#20201D" font-family="Arial, sans-serif" font-size="54" font-weight="700">Карточки и преимущества</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#1F8A70"/>
+  <rect x="126" y="126" width="948" height="1148" fill="#F6F0E5"/>
+  <rect x="214" y="222" width="772" height="390" fill="#D98E47"/>
+  <path d="M214 612C368 452 522 396 676 444C796 481 886 568 986 724V1000H214V612Z" fill="#EBCB93"/>
+  <rect x="246" y="790" width="220" height="310" fill="#20201D"/>
+  <rect x="520" y="790" width="220" height="310" fill="#F6F0E5"/>
+  <text x="214" y="1180" fill="#20201D" font-family="Arial, sans-serif" font-size="58" font-weight="700">Hero + подбор объектов</text>
+</svg>

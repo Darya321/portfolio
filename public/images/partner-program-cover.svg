@@ -1,0 +1,10 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#EEE9DF"/>
+  <rect x="120" y="120" width="1360" height="760" fill="#20201D"/>
+  <rect x="202" y="202" width="438" height="596" fill="#8C6FF0"/>
+  <rect x="720" y="202" width="616" height="148" fill="#F7F3EA"/>
+  <rect x="720" y="424" width="278" height="374" fill="#D8D2C7"/>
+  <rect x="1058" y="424" width="278" height="374" fill="#F7F3EA"/>
+  <text x="246" y="384" fill="#F7F3EA" font-family="Arial, sans-serif" font-size="78" font-weight="700">Partner</text>
+  <text x="246" y="474" fill="#F7F3EA" font-family="Arial, sans-serif" font-size="78" font-weight="700">Program</text>
+</svg>

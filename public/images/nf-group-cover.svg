@@ -1,0 +1,11 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#EFECE4"/>
+  <rect x="112" y="112" width="1376" height="776" fill="#183F9D"/>
+  <rect x="194" y="190" width="380" height="620" fill="#F7F3EA"/>
+  <rect x="650" y="190" width="690" height="156" fill="#F7F3EA"/>
+  <rect x="650" y="412" width="318" height="398" fill="#D8D2C7"/>
+  <rect x="1022" y="412" width="318" height="398" fill="#20201D"/>
+  <text x="226" y="348" fill="#20201D" font-family="Arial, sans-serif" font-size="86" font-weight="700">NF</text>
+  <text x="226" y="448" fill="#20201D" font-family="Arial, sans-serif" font-size="86" font-weight="700">Group</text>
+  <text x="650" y="890" fill="#F7F3EA" font-family="Arial, sans-serif" font-size="48" font-weight="700">Event Materials</text>
+</svg>

@@ -1,0 +1,4 @@
+{
+  "extends": ["next/core-web-vitals"],
+  "ignorePatterns": ["node_modules/", "node_modules_stale/", ".next/", ".npm-cache-new/", ".npm-cache-stale/"]
+}

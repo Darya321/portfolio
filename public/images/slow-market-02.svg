@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#F3EEE4"/>
+  <rect x="120" y="120" width="960" height="1160" stroke="#20201D" stroke-width="2"/>
+  <rect x="220" y="220" width="330" height="420" fill="#2F6F5E"/>
+  <rect x="650" y="220" width="330" height="420" fill="#D6A76D"/>
+  <rect x="220" y="746" width="760" height="260" fill="#20201D"/>
+  <text x="260" y="1160" fill="#20201D" font-family="Arial, sans-serif" font-size="60" font-weight="700">Campaign grid</text>
+</svg>

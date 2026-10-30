@@ -1,0 +1,10 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#EDE4D5"/>
+  <rect x="100" y="100" width="1400" height="800" fill="#2F6F5E"/>
+  <rect x="188" y="188" width="520" height="624" fill="#F3EEE4"/>
+  <rect x="760" y="188" width="652" height="272" fill="#D6A76D"/>
+  <rect x="760" y="516" width="306" height="296" fill="#F3EEE4"/>
+  <rect x="1106" y="516" width="306" height="296" fill="#20201D"/>
+  <text x="240" y="330" fill="#20201D" font-family="Arial, sans-serif" font-size="86" font-weight="700">Slow</text>
+  <text x="240" y="430" fill="#20201D" font-family="Arial, sans-serif" font-size="86" font-weight="700">Market</text>
+</svg>

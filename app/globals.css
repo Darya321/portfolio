@@ -1,0 +1,466 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --blue: #243d78;
+  --blue-deep: #182d5f;
+  --blue-soft: #7484ad;
+  --paper: #f8f8f3;
+  --ink: #11131a;
+  --muted: #6f7892;
+  --line: rgba(17, 19, 26, 0.1);
+  --accent: #d24d2c;
+  --page-max-width: 1440px;
+  --page-padding: 1rem;
+  --grid-columns: 8;
+  --grid-row: 96px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--blue);
+  overflow-x: hidden;
+}
+
+body {
+  --page-grid-width: min(calc(100% - (var(--page-padding) * 2)), var(--page-max-width));
+  --page-grid-offset: max(var(--page-padding), calc((100% - var(--page-max-width)) / 2));
+  --page-grid-unit: calc(var(--page-grid-width) / var(--grid-columns));
+  --page-grid-center: calc(var(--page-grid-offset) + (var(--page-grid-width) / 2));
+  margin: 0;
+  min-width: 320px;
+  overflow-x: clip;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.12), transparent 28rem),
+    var(--blue);
+  color: var(--paper);
+  font-family: "Segoe UI", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--paper);
+  color: var(--blue);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .has-custom-cursor body,
+  .has-custom-cursor a,
+  .has-custom-cursor button,
+  .has-custom-cursor input,
+  .has-custom-cursor textarea,
+  .has-custom-cursor select,
+  .has-custom-cursor label {
+    cursor: none;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 5px;
+}
+
+.container-page {
+  width: var(--page-grid-width);
+  margin-inline: auto;
+}
+
+.module-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: 0;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.blue-guide-after-card,
+.contacts-guide-inlet,
+.projects-guide-header,
+.blue-guide-section {
+  --blue-guide-line: rgba(248, 248, 243, 0.16);
+  --blue-guide-half-width: 0.4px;
+  position: relative;
+  isolation: isolate;
+}
+
+.blue-guide-after-card::before,
+.contacts-guide-inlet::before,
+.projects-guide-header::before,
+.blue-guide-section::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent calc(12.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(12.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(12.5% + var(--blue-guide-half-width)),
+      transparent calc(12.5% + var(--blue-guide-half-width)),
+      transparent calc(25% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(25% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(25% + var(--blue-guide-half-width)),
+      transparent calc(25% + var(--blue-guide-half-width)),
+      transparent calc(37.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(37.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(37.5% + var(--blue-guide-half-width)),
+      transparent calc(37.5% + var(--blue-guide-half-width)),
+      transparent calc(50% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(50% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(50% + var(--blue-guide-half-width)),
+      transparent calc(50% + var(--blue-guide-half-width)),
+      transparent calc(62.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(62.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(62.5% + var(--blue-guide-half-width)),
+      transparent calc(62.5% + var(--blue-guide-half-width)),
+      transparent calc(75% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(75% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(75% + var(--blue-guide-half-width)),
+      transparent calc(75% + var(--blue-guide-half-width)),
+      transparent calc(87.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(87.5% - var(--blue-guide-half-width)),
+      var(--blue-guide-line) calc(87.5% + var(--blue-guide-half-width)),
+      transparent calc(87.5% + var(--blue-guide-half-width))
+    );
+}
+
+.blue-guide-after-card::before {
+  top: calc(4rem + 0vh + 430px);
+}
+
+.projects-guide-header::before {
+  top: -4rem;
+  bottom: 0;
+}
+
+.contacts-guide-inlet::before {
+  bottom: auto;
+  height: 2.5rem;
+}
+
+.blue-guide-after-card > *,
+.contacts-guide-inlet > *,
+.projects-guide-header > *,
+.blue-guide-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-progress {
+  transform-origin: left center;
+}
+
+.blueprint-shell,
+.case-paper,
+.menu-shell {
+  --surface-grid-line: rgba(18, 63, 159, 0.045);
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+  background-image:
+    linear-gradient(
+      0deg,
+      transparent calc(20% - 0.5px),
+      var(--surface-grid-line) calc(20% - 0.5px),
+      var(--surface-grid-line) calc(20% + 0.5px),
+      transparent calc(20% + 0.5px),
+      transparent calc(40% - 0.5px),
+      var(--surface-grid-line) calc(40% - 0.5px),
+      var(--surface-grid-line) calc(40% + 0.5px),
+      transparent calc(40% + 0.5px),
+      transparent calc(60% - 0.5px),
+      var(--surface-grid-line) calc(60% - 0.5px),
+      var(--surface-grid-line) calc(60% + 0.5px),
+      transparent calc(60% + 0.5px),
+      transparent calc(80% - 0.5px),
+      var(--surface-grid-line) calc(80% - 0.5px),
+      var(--surface-grid-line) calc(80% + 0.5px),
+      transparent calc(80% + 0.5px)
+    ),
+    linear-gradient(
+      90deg,
+      transparent calc(12.5% - 0.5px),
+      var(--surface-grid-line) calc(12.5% - 0.5px),
+      var(--surface-grid-line) calc(12.5% + 0.5px),
+      transparent calc(12.5% + 0.5px),
+      transparent calc(25% - 0.5px),
+      var(--surface-grid-line) calc(25% - 0.5px),
+      var(--surface-grid-line) calc(25% + 0.5px),
+      transparent calc(25% + 0.5px),
+      transparent calc(37.5% - 0.5px),
+      var(--surface-grid-line) calc(37.5% - 0.5px),
+      var(--surface-grid-line) calc(37.5% + 0.5px),
+      transparent calc(37.5% + 0.5px),
+      transparent calc(50% - 0.5px),
+      var(--surface-grid-line) calc(50% - 0.5px),
+      var(--surface-grid-line) calc(50% + 0.5px),
+      transparent calc(50% + 0.5px),
+      transparent calc(62.5% - 0.5px),
+      var(--surface-grid-line) calc(62.5% - 0.5px),
+      var(--surface-grid-line) calc(62.5% + 0.5px),
+      transparent calc(62.5% + 0.5px),
+      transparent calc(75% - 0.5px),
+      var(--surface-grid-line) calc(75% - 0.5px),
+      var(--surface-grid-line) calc(75% + 0.5px),
+      transparent calc(75% + 0.5px),
+      transparent calc(87.5% - 0.5px),
+      var(--surface-grid-line) calc(87.5% - 0.5px),
+      var(--surface-grid-line) calc(87.5% + 0.5px),
+      transparent calc(87.5% + 0.5px)
+    );
+  background-position: 0 0, 0 0;
+  background-size: 100% 100%, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-origin: border-box;
+  background-clip: border-box;
+  color: var(--ink);
+}
+
+.archive-shell {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+  background-image: linear-gradient(90deg, rgba(18, 63, 159, 0.06) 1px, transparent 1px);
+  background-position: 0 0;
+  background-size: calc(100% / var(--grid-columns)) 100%;
+  color: var(--ink);
+}
+
+.footer-plain-shell {
+  position: relative;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.footer-grid-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.footer-shell {
+  --surface-grid-line: rgba(18, 63, 159, 0.08);
+  position: relative;
+  overflow: hidden;
+  background: var(--paper);
+  background-image: linear-gradient(90deg, var(--surface-grid-line) 1px, transparent 1px);
+  background-position: 0 0;
+  background-size: var(--page-grid-unit) 100%;
+  color: var(--ink);
+}
+
+.case-paper {
+  --surface-grid-line: rgba(18, 63, 159, 0.055);
+}
+
+.blueprint-shell::after,
+.menu-shell::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom right, transparent calc(50% - 0.5px), rgba(18, 63, 159, 0.08) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(to top right, transparent calc(50% - 0.5px), rgba(18, 63, 159, 0.08) 50%, transparent calc(50% + 0.5px));
+}
+
+.blueprint-orbit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(44vw, 520px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(18, 63, 159, 0.08);
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+}
+
+.blueprint-dot {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--blue);
+  border-radius: 999px;
+  background: var(--paper);
+}
+
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  opacity: 0.08;
+  mix-blend-mode: soft-light;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");
+}
+
+.site-cursor {
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100001;
+  width: 26px;
+  height: 26px;
+  opacity: 0;
+  mix-blend-mode: difference;
+  transform: translate3d(-100px, -100px, 0) translate(-50%, -50%);
+  transition:
+    opacity 160ms ease,
+    width 180ms ease,
+    height 180ms ease;
+  will-change: transform, width, height, opacity;
+}
+
+.site-cursor::before,
+.site-cursor::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 999px;
+  background: var(--paper);
+  box-shadow: 0 0 10px rgba(248, 248, 243, 0.26);
+  transform: translate(-50%, -50%);
+}
+
+.site-cursor::before {
+  width: 100%;
+  height: 1px;
+}
+
+.site-cursor::after {
+  width: 1px;
+  height: 100%;
+}
+
+.site-cursor.is-visible {
+  opacity: 0.92;
+}
+
+.site-cursor.is-interactive {
+  width: 38px;
+  height: 38px;
+}
+
+.site-cursor.is-pressed {
+  width: 18px;
+  height: 18px;
+  opacity: 1;
+}
+
+.process-arc-live-card {
+  will-change: transform, opacity;
+}
+
+.process-frame-grid {
+  background: transparent;
+}
+
+@keyframes archiveCardsIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body.debug-grid::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  z-index: 100000;
+  top: 0;
+  bottom: 0;
+  left: var(--page-grid-offset);
+  width: var(--page-grid-width);
+  border-inline: 1px solid rgba(255, 46, 46, 0.72);
+  background:
+    linear-gradient(90deg, transparent calc(50% - 0.5px), rgba(255, 46, 46, 0.9) 50%, transparent calc(50% + 0.5px)),
+    linear-gradient(90deg, rgba(255, 46, 46, 0.22) 1px, transparent 1px) 0 0 / var(--page-grid-unit) 100%;
+}
+
+@media (max-width: 640px) {
+  body {
+    --grid-columns: 4;
+    --grid-row: 84px;
+  }
+
+  .blueprint-orbit {
+    width: 78vw;
+  }
+
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  body {
+    --grid-columns: 8;
+  }
+
+  .blue-guide-after-card::before {
+    top: calc(4rem + 0vh + 520px);
+  }
+
+  .contacts-guide-inlet::before {
+    height: 4rem;
+  }
+
+  .projects-guide-header::before {
+    top: -6rem;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  .blue-guide-after-card::before {
+    top: calc(4rem + 0vh + 560px);
+  }
+
+  .contacts-guide-inlet::before {
+    height: 4rem;
+  }
+
+  .projects-guide-header::before {
+    top: -6rem;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

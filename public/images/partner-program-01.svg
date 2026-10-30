@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#8C6FF0"/>
+  <rect x="128" y="128" width="944" height="1144" fill="#F7F3EA"/>
+  <rect x="220" y="236" width="760" height="230" fill="#20201D"/>
+  <rect x="220" y="566" width="330" height="430" fill="#D8D2C7"/>
+  <rect x="650" y="566" width="330" height="430" fill="#8C6FF0"/>
+  <text x="220" y="1160" fill="#20201D" font-family="Arial, sans-serif" font-size="56" font-weight="700">Presentation logic</text>
+</svg>

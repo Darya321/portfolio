@@ -1,0 +1,13 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#E9DDCA"/>
+  <rect x="92" y="92" width="1416" height="816" fill="#F6F0E5" stroke="#20201D" stroke-width="2"/>
+  <rect x="174" y="176" width="562" height="648" fill="#1F8A70"/>
+  <rect x="238" y="250" width="434" height="236" fill="#EBCB93"/>
+  <rect x="238" y="536" width="178" height="220" fill="#F6F0E5"/>
+  <rect x="462" y="536" width="210" height="220" fill="#20201D"/>
+  <path d="M832 744C922 580 1046 492 1204 480C1322 471 1408 515 1474 616" stroke="#20201D" stroke-width="8"/>
+  <circle cx="1282" cy="302" r="156" fill="#D98E47"/>
+  <text x="822" y="286" fill="#20201D" font-family="Arial, sans-serif" font-size="84" font-weight="700">Thailand</text>
+  <text x="822" y="382" fill="#20201D" font-family="Arial, sans-serif" font-size="84" font-weight="700">Estate</text>
+  <text x="826" y="450" fill="#6D665B" font-family="Arial, sans-serif" font-size="30">real estate website concept</text>
+</svg>

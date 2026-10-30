@@ -1,0 +1,14 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#E8D7C4"/>
+  <rect x="96" y="96" width="1408" height="808" fill="#F5EFE6" stroke="#241F1A" stroke-width="2"/>
+  <circle cx="1220" cy="284" r="186" fill="#D24D2C"/>
+  <rect x="248" y="176" width="340" height="648" rx="44" fill="#20201D"/>
+  <rect x="280" y="226" width="276" height="548" rx="26" fill="#F3EEE4"/>
+  <rect x="316" y="286" width="120" height="18" fill="#D24D2C"/>
+  <rect x="316" y="342" width="204" height="96" fill="#F2C88F"/>
+  <rect x="316" y="466" width="204" height="96" fill="#9FB782"/>
+  <rect x="316" y="590" width="204" height="96" fill="#D8D0C3"/>
+  <path d="M742 665C827 509 937 427 1072 419C1196 411 1284 461 1370 598" stroke="#20201D" stroke-width="8"/>
+  <text x="736" y="278" fill="#20201D" font-family="Arial, sans-serif" font-size="96" font-weight="700">Твоя коровка</text>
+  <text x="740" y="354" fill="#5E574F" font-family="Arial, sans-serif" font-size="30">mobile service for farmers</text>
+</svg>

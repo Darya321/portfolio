@@ -1,0 +1,8 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#EEE3DE"/>
+  <rect x="100" y="100" width="1400" height="800" fill="#20201D"/>
+  <rect x="206" y="206" width="322" height="322" fill="#8C3F82"/>
+  <circle cx="878" cy="366" r="160" fill="#F3EEE4"/>
+  <path d="M1008 660L1258 226L1508 660H1008Z" fill="#D9A3CF"/>
+  <text x="206" y="774" fill="#F3EEE4" font-family="Arial, sans-serif" font-size="92" font-weight="700">Signal Form</text>
+</svg>

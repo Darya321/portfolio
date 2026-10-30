@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#F7F3EA"/>
+  <rect x="120" y="120" width="960" height="1160" fill="#20201D"/>
+  <circle cx="410" cy="420" r="170" fill="#8C6FF0"/>
+  <rect x="650" y="250" width="260" height="340" fill="#F7F3EA"/>
+  <rect x="220" y="740" width="690" height="250" fill="#D8D2C7"/>
+  <text x="220" y="1150" fill="#F7F3EA" font-family="Arial, sans-serif" font-size="56" font-weight="700">Message hierarchy</text>
+</svg>

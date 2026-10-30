@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#F7F3EA"/>
+  <rect x="132" y="132" width="936" height="1136" stroke="#20201D" stroke-width="2"/>
+  <rect x="220" y="230" width="760" height="170" fill="#183F9D"/>
+  <rect x="220" y="500" width="310" height="520" fill="#20201D"/>
+  <rect x="610" y="500" width="370" height="520" fill="#D8D2C7"/>
+  <text x="220" y="1164" fill="#20201D" font-family="Arial, sans-serif" font-size="56" font-weight="700">Badges & handouts</text>
+</svg>

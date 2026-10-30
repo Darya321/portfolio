@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#20201D"/>
+  <rect x="134" y="134" width="932" height="1132" fill="#F3EEE4"/>
+  <rect x="224" y="236" width="320" height="320" fill="#8C3F82"/>
+  <circle cx="776" cy="396" r="160" fill="#D9A3CF"/>
+  <path d="M226 1012L448 626L670 1012H226Z" fill="#20201D"/>
+  <text x="224" y="1160" fill="#20201D" font-family="Arial, sans-serif" font-size="56" font-weight="700">Poster system</text>
+</svg>

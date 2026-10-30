@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#1F8A70"/>
+  <rect x="140" y="140" width="920" height="1120" fill="#F7F3EA"/>
+  <rect x="220" y="240" width="760" height="280" fill="#E09B4D"/>
+  <rect x="220" y="590" width="340" height="420" fill="#20201D"/>
+  <rect x="640" y="590" width="340" height="420" fill="#D8D2C7"/>
+  <text x="220" y="1160" fill="#20201D" font-family="Arial, sans-serif" font-size="56" font-weight="700">Banner set</text>
+</svg>

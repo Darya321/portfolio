@@ -1,0 +1,9 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#D24D2C"/>
+  <rect x="104" y="104" width="992" height="1192" fill="#F3EEE4"/>
+  <path d="M240 884C368 650 538 538 750 548C902 556 1010 634 1064 780" stroke="#20201D" stroke-width="10"/>
+  <rect x="224" y="224" width="318" height="184" fill="#20201D"/>
+  <rect x="598" y="224" width="278" height="184" fill="#E8D7C4"/>
+  <rect x="224" y="472" width="652" height="72" fill="#9FB782"/>
+  <text x="224" y="1168" fill="#20201D" font-family="Arial, sans-serif" font-size="64" font-weight="700">Сценарии и события</text>
+</svg>

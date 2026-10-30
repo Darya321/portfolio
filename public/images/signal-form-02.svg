@@ -1,0 +1,8 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" fill="#8C3F82"/>
+  <rect x="120" y="120" width="960" height="1160" stroke="#F3EEE4" stroke-width="2"/>
+  <circle cx="372" cy="410" r="154" fill="#F3EEE4"/>
+  <rect x="612" y="256" width="308" height="308" fill="#20201D"/>
+  <path d="M282 1030L600 612L918 1030H282Z" fill="#D9A3CF"/>
+  <text x="190" y="1182" fill="#F3EEE4" font-family="Arial, sans-serif" font-size="54" font-weight="700">Visual modules</text>
+</svg>
