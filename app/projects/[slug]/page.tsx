@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Project } from "@/data/projects";
 import { getProject, projects } from "@/data/projects";
+import { withBasePath } from "@/lib/base-path";
 
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
@@ -127,7 +128,7 @@ function CaseHero({ project }: { project: Project }) {
 
       <figure id="case-start" className="mt-12 border border-ink/10 bg-white p-2 sm:p-3 lg:mt-16">
         <Image
-          src="/images/thailand-case/hero.png"
+          src={withBasePath("/images/thailand-case/hero.png")}
           alt="Первый экран лендинга недвижимости в Таиланде"
           width={1800}
           height={990}
@@ -206,7 +207,7 @@ function VisualsSection() {
             </figcaption>
             <div className={`${visual.wide ? "md:col-span-8 md:col-start-5" : "md:col-span-6 md:col-start-6"} col-span-4`}>
               <Image
-                src={visual.image}
+                src={withBasePath(visual.image)}
                 alt={visual.label}
                 width={visual.width}
                 height={visual.height}

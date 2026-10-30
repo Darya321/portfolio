@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Project } from "@/data/projects";
+import { withBasePath } from "@/lib/base-path";
 
 type ProjectCardProps = {
   project: Project;
@@ -20,7 +21,7 @@ export function ProjectCard({ project, priority = false, large = false }: Projec
     >
       <div className={`relative overflow-hidden bg-white ${large ? "aspect-[4/3]" : "aspect-[16/10]"}`}>
         <Image
-          src={project.coverImage}
+          src={withBasePath(project.coverImage)}
           alt={`Обложка проекта ${project.title}`}
           fill
           priority={priority}

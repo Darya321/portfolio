@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 
 type ProcessArcSlot = {
   id: string;
@@ -137,7 +138,7 @@ export function ProcessArcCarousel({ slots }: ProcessArcCarouselProps) {
           className="process-arc-live-card absolute left-1/2 top-1/2 h-[86px] w-[86px] overflow-hidden rounded-[14px] border border-white/28 bg-[linear-gradient(135deg,rgba(255,255,255,0.96),rgba(255,255,255,0.14))] shadow-[0_18px_45px_rgba(0,0,0,0.2)] sm:h-[112px] sm:w-[112px] sm:rounded-[16px]"
         >
           <Image
-            src={slot.image}
+            src={withBasePath(slot.image)}
             alt=""
             fill
             sizes="120px"

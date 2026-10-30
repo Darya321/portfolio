@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Project, ProjectCategory } from "@/data/projects";
 import { projectCategoryLabels, projects } from "@/data/projects";
+import { withBasePath } from "@/lib/base-path";
 
 type ProjectFilter = "all" | ProjectCategory;
 
@@ -70,7 +71,7 @@ function ArchiveProjectCard({ project, index }: ArchiveProjectCardProps) {
           className={`relative overflow-hidden bg-paper/5 ${getProjectImageClass(index)} transition duration-[650ms] ease-editorial group-hover:brightness-110 group-focus-visible:brightness-110`}
         >
           <Image
-            src={displayImage}
+            src={withBasePath(displayImage)}
             alt={`Обложка проекта ${project.title}`}
             fill
             priority={index < 2}

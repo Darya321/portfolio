@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ProjectGrid } from "@/components/project-grid";
 import { ProcessArcCarousel } from "@/components/process-arc-carousel";
 import { projects } from "@/data/projects";
+import { withBasePath } from "@/lib/base-path";
 
 const skillPoints = [
   { label: "Title", className: "left-[17%] top-[17%]" },
@@ -154,7 +155,7 @@ export function HomeSections() {
             ))}
 
             <div className="absolute left-1/2 top-[43%] z-20 h-[68px] w-[68px] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-[8px] border border-[#7fb4ff] bg-white shadow-[0_16px_40px_rgba(18,63,159,0.18)] sm:top-1/2 sm:h-[84px] sm:w-[84px]">
-              <Image src="/images/daria-avatar.jpg" alt="Нестеркина Дарья" fill priority sizes="84px" className="object-cover" />
+              <Image src={withBasePath("/images/daria-avatar.jpg")} alt="Нестеркина Дарья" fill priority sizes="84px" className="object-cover" />
               <span className="absolute bottom-1 right-1 h-3 w-3 rounded-full border border-white bg-[#23d45b]" aria-hidden="true" />
             </div>
 
